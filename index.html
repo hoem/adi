@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Peticiones online</title>
+</head>
+<body>
+    <div id="overLogin" class="overbox">
+        <form id="login-form" class="aui_login-form">
+            <label>Usuario</label>
+            <input id="id_user" class="text" type="email" pattern="[^ @]*@[^ @]*" aoutofocus="autofocus" name="username">
+            <label>Contraseña</label>
+            <input id="id_pass" class="pass" type="password" name="password">
+        </form>
+    </div>
+
+    {{#destacadas}}
+        {{titulo}}
+        <img src="img/peticiones/{{id}}.jpg">
+        {{firmasConseguidas}}
+        <a href="peticion?id={{id}}">peticion</a>
+    {{/destacadas}}
+</body>
+</html>
